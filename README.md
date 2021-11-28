@@ -3,11 +3,12 @@
 ## Gender prediction (Male/Female) task:
 
 In this task, a dataset of 3700 training samples was given to predict the gender of a device user so that we could help the advertisers to target within the apps. The features of the dataset are given below:
-•	device_name: the name given to the device, e.g., "Maria's iPhone"
-•	app_category: the classification of the app content, e.g., "fashion"
-•	interaction_with_app: how long the user interacted with the app during this session (in minutes)
-•	ad_category: the classification of the ad that was shown during the event (e.g., "clothing")
-•	click: whether the user clicked the ad (yes/no)
+* device_name: the name given to the device, e.g., "Maria's iPhone"
+* app_category: the classification of the app content, e.g., "fashion"
+* interaction_with_app: how long the user interacted with the app during this session (in minutes)
+* ad_category: the classification of the ad that was shown during the event (e.g., "clothing")
+* click: whether the user clicked the ad (yes/no)
+
 Challenges of the task and proposed solutions are discussed below:
 ## Challenges:
 1.	Unbalanced dataset: The first challenge is the unbalance in the dataset, as the frequency of male targets is twice the other class. Thus, we have to define the proper loss function in order to compensate for the unbalance of the dataset. Another solution for such problems is to augment the data to balance the target classes, but since almost all the features are categorical, fabricating and augmenting the dataset would make false-positive cases. Therefore, it has to do with much care. 
